@@ -1,0 +1,35 @@
+.bar {
+  fill: rgb(51, 173, 255);
+
+  &:hover {
+    fill: navy;
+  }
+}
+
+.tooltip {
+  padding: 20px;
+  border: 1px solid black;
+  background: white;
+  display: none;
+
+  &_visibility {
+    &_visible {
+      display: block;
+    }
+  }
+}
+
+.chart {
+  &_type_bar {
+    display: inline-block;
+    position: relative;
+
+    .chart__tooltip {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 125px;
+      text-align: center;
+    }
+  }
+}
